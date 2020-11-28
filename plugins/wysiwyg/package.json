@@ -1,0 +1,26 @@
+{
+  "name": "strapi-plugin-wysiwyg",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "wysiwyg",
+    "icon": "plug",
+    "description": "CKEditor to rich text fields"
+  },
+  "dependencies": {},
+  "author": {
+    "name": "Sabia Platform",
+    "url": "https://github.com/ufersa/plataforma-sabia/blob/master/README.md#Credits"
+  },
+  "maintainers": [
+    {
+      "name": "Sabia Platform",
+      "url": "https://github.com/ufersa/plataforma-sabia/blob/master/README.md#Credits"
+    }
+  ],
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
