@@ -13,10 +13,16 @@
   "attributes": {
     "title": {
       "type": "string",
+      "unique": true,
       "required": true
     },
     "subtitle": {
-      "type": "string"
+      "type": "string",
+      "required": false
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
     },
     "thumbnail": {
       "model": "file",
@@ -27,21 +33,11 @@
       "plugin": "upload",
       "required": false
     },
-    "content": {
-      "type": "richtext",
-      "required": true
+    "slug": {
+      "type": "string"
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "desenvolvimento",
-        "educacao",
-        "parcerias",
-        "noticias",
-        "caravana_sabia",
-        "novidades"
-      ],
-      "required": true
+    "categories": {
+      "collection": "category"
     }
   }
 }
