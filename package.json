@@ -15,6 +15,7 @@
     "@ckeditor/ckeditor5-react": "^3.0.0",
     "knex": "<0.20.0",
     "mysql": "latest",
+    "slugify": "^1.4.6",
     "strapi": "3.3.4",
     "strapi-admin": "3.3.4",
     "strapi-connector-bookshelf": "3.3.4",
