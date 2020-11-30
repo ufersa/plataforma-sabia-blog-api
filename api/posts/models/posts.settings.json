@@ -30,6 +30,18 @@
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "desenvolvimento",
+        "educacao",
+        "parcerias",
+        "noticias",
+        "caravana_sabia",
+        "novidades"
+      ],
+      "required": true
     }
   }
 }
