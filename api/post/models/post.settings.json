@@ -11,6 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
     "title": {
       "type": "string",
       "unique": true,
@@ -23,15 +32,6 @@
     "content": {
       "type": "richtext",
       "required": true
-    },
-    "thumbnail": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
     },
     "slug": {
       "type": "string"
