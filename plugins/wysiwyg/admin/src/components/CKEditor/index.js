@@ -32,6 +32,9 @@ const configuration = {
     'undo',
     'redo',
   ],
+  mediaEmbed: {
+    previewsInData: true,
+  }
 };
 
 const Editor = ({ onChange, name, value }) => {
