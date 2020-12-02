@@ -2,7 +2,7 @@ const slugify = require('slugify');
 
 module.exports = {
   /**
-   * Triggered before user creation.
+   * Triggered before post creation.
    */
   lifecycles: {
     async beforeCreate(data) {
