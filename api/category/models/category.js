@@ -1,4 +1,4 @@
-const slugify = require('slugify');
+const { createUniqueSlug } = require('../../../utils');
 
 module.exports = {
   /**
@@ -7,12 +7,12 @@ module.exports = {
   lifecycles: {
     async beforeCreate(data) {
       if (data.name) {
-        data.slug = slugify(data.name, { lower: true });
+        data.slug = createUniqueSlug(data.name);
       }
     },
     async beforeUpdate(params, data) {
       if (data.name) {
-        data.slug = slugify(data.name, { lower: true });
+        data.slug = createUniqueSlug(data.name);
       }
     },
   },
