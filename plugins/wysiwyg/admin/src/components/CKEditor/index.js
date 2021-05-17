@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import CustomEditorBuild from '../../editor/build';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -26,6 +26,8 @@ const configuration = {
     'indent',
     'outdent',
     '|',
+    'alignment',
+    '|',
     'blockQuote',
     'insertTable',
     'mediaEmbed',
@@ -41,7 +43,7 @@ const Editor = ({ onChange, name, value }) => {
   return (
     <Wrapper>
       <CKEditor
-        editor={ClassicEditor}
+        editor={CustomEditorBuild}
         config={configuration}
         data={value}
         onChange={(event, editor) => {
