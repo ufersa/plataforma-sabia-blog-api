@@ -38,6 +38,15 @@
     },
     "categories": {
       "collection": "category"
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
